@@ -31,6 +31,7 @@ void seg_off()
   digitalWrite(d, LOW);
   digitalWrite(e, LOW);
   digitalWrite(f, LOW);
+  digitalWrite(g, LOW);
 }
 
 void print_segment(int com, int data)
@@ -38,6 +39,7 @@ void print_segment(int com, int data)
   switch (data)
   {
     case 0:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -49,6 +51,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 1:
+      seg_off();
       digitalWrite(a, LOW);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -60,6 +63,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 2:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, LOW);
@@ -71,6 +75,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 3:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -82,6 +87,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 4:
+      seg_off();
       digitalWrite(a, LOW);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -93,6 +99,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 5:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, LOW);
       digitalWrite(c, HIGH);
@@ -104,6 +111,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 6:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, LOW);
       digitalWrite(c, HIGH);
@@ -115,6 +123,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 7:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -126,6 +135,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 8:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -137,6 +147,7 @@ void print_segment(int com, int data)
       seg_off();
       break;
     case 9:
+      seg_off();
       digitalWrite(a, HIGH);
       digitalWrite(b, HIGH);
       digitalWrite(c, HIGH);
@@ -156,7 +167,7 @@ void print_segment(int com, int data)
       digitalWrite(com3, HIGH);
       digitalWrite(com4, HIGH);
       delayMicroseconds(p_delay);
-      seg_off();
+      s
       break;
     case 2:
       digitalWrite(com1, HIGH);
@@ -164,7 +175,7 @@ void print_segment(int com, int data)
       digitalWrite(com3, HIGH);
       digitalWrite(com4, HIGH);
       delayMicroseconds(p_delay);
-      seg_off();
+      
       break;
     case 3:
       digitalWrite(com1, HIGH);
@@ -172,7 +183,7 @@ void print_segment(int com, int data)
       digitalWrite(com3, LOW);
       digitalWrite(com4, HIGH);
       delay(p_delay);
-      seg_off();
+    
       break;
     case 4:
       digitalWrite(com1, HIGH);
@@ -180,7 +191,7 @@ void print_segment(int com, int data)
       digitalWrite(com3, HIGH);
       digitalWrite(com4, LOW);
       delayMicroseconds(p_delay);
-      seg_off();
+    
       break;
   }
 
