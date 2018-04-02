@@ -167,7 +167,6 @@ void print_segment(int com, int data)
       digitalWrite(com3, HIGH);
       digitalWrite(com4, HIGH);
       delayMicroseconds(p_delay);
-      s
       break;
     case 2:
       digitalWrite(com1, HIGH);
